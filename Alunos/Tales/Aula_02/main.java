@@ -12,7 +12,7 @@ public class main {
             do {
                
                 System.out.println("\n=== Calculadora Dona Gabrielinha ===");
-                System.out.println("[1] - Calcular Preço Total");
+                System.out.println("[1] - Calcular Preço Total.");
                 System.out.println("[2] - Calcular Troco");
                 System.out.println("[3] - Sair");
                 System.out.print("Escolha uma opção: ");
