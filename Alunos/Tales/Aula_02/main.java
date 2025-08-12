@@ -71,7 +71,7 @@ public class main {
                         
                     default:
                        
-                        System.out.println("Opção inválida. Por favor, escolha 1, 2 ou 3.");
+                        System.out.println("Opção inválida. Por favor, escolha 1, 2 ou 3. Para funcionar o sistema.");
                 }
             } while (opcao != 3); 
         } 
