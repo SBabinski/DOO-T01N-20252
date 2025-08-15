@@ -1,6 +1,6 @@
 import java.util.Scanner;
-
 import java.util.ArrayList;
+
 
 class Venda {
     int quantidade;
@@ -51,7 +51,7 @@ public class Calculadora {
                     int quantidade = scanner.nextInt();
 
                     System.out.println("digite o preco unitario da planta");
-                    
+
                     double precounitario = scanner.nextDouble();
 
                     precototal = quantidade * precounitario;
@@ -69,15 +69,13 @@ public class Calculadora {
                         totaldsc = precototal - desconto;
                         System.out.println(totaldsc);
                         valorFinal = totaldsc;
-                    }
-                    else {
-                    
+                    } else {
+
                         System.out.println("total é:");
                         System.out.println();
                         System.out.println(precototal);
                         valorFinal = precototal;
                     }
-                    
 
                     vendas.add(new Venda(quantidade, precounitario, valorFinal));
 
@@ -119,4 +117,4 @@ public class Calculadora {
         scanner.close();
     }
 
-}
+}/*  */
