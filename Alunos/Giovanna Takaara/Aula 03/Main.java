@@ -29,7 +29,8 @@ public class Main {
                                 "da sua compra! \n");
                     }
 
-                    System.out.println("Digite o valor unitário: \n");
+
+                    System.out.println("Digite o valor unitário:  \n");
                     float valor = scanner.nextFloat();
 
                     float total = quantidade * valor;
