@@ -74,7 +74,7 @@ public class Main {
                     break;
 
                 case 4:
-                    System.out.println("Saindo do programa...");
+                    System.out.println("Saindo do programa... ");
                     break;
 
                 default:
