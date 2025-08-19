@@ -1,4 +1,4 @@
-package CalculadoraDePlantas;
+package aula_02;
 
 import  java.util.Scanner;
 
