@@ -1,4 +1,4 @@
-package sofia;
+
 import java.util.Scanner;
 
 public class CalculadoraLojaPlantas {
