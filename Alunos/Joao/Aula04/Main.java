@@ -121,7 +121,6 @@ public class Main {
                     System.out.println("Opção inválida, tente novamente!");
 
             }
-
         }
         while (escolha != 6);
     }
