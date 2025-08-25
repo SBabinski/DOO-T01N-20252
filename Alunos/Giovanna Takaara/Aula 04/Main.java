@@ -57,7 +57,6 @@ public class Main {
                     listaValorTot.add (valortotal);
                     listadia.add(dia);
                     listaMes.add(mes);
-
                     break;
 
                 case 2:
