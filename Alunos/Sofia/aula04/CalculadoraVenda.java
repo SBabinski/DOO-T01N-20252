@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class CalculadoraVendas {
+public class CalculadoraVenda {
 
     private static Map<String, Integer> vendasPorData = new HashMap<>();
 

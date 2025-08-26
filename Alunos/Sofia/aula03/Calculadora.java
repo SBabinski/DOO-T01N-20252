@@ -24,7 +24,7 @@ class Venda {
     }
 }
 
-public class sofia {
+public class Calculadora {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
