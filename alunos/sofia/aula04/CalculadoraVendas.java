@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CalculadoraVendas {
 
-    // Estrutura para armazenar as vendas -> chave "mes-dia", valor total de vendas
     private static Map<String, Integer> vendasPorData = new HashMap<>();
 
     public static void registrarVenda(int mes, int dia, int quantidade) {
