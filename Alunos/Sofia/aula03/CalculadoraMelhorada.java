@@ -89,7 +89,7 @@ public class CalculadoraMelhorada {
             System.out.println("🎉 Desconto especial de 5% aplicado!");
         }
 
-        System.out.println("💰 Valor final da compra: R$ " + valorTotal);
+        System.out.println("💰 Valor final da compra é: R$ " + valorTotal);
 
         // Registrar a venda
         Venda venda = new Venda(quantidade, precoUnitario, valorTotal, desconto);

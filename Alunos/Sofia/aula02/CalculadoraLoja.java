@@ -52,7 +52,7 @@ public class CalculadoraLoja {
             System.out.println("Valor recebido é menor que o valor total da compra. Não é possível calcular o troco.");
         } else {
             double troco = valorRecebido - valorTotal;
-            System.out.printf("O troco a ser dado ao cliente é: R$ %.2f%n", troco);
+            System.out.printf("O troco a ser dado ao cliente é de: R$ %.2f%n", troco);
         }
     }
 }

@@ -12,7 +12,7 @@ public class CalculadoraVendas {
     public static void registrarVenda(int mes, int dia, int quantidade) {
         String chave = mes + "-" + dia;
         vendasPorData.put(chave, vendasPorData.getOrDefault(chave, 0) + quantidade);
-        System.out.println("Venda registrada com sucesso!");
+        System.out.println("Venda registrada com sucesso");
     }
 
     public static void buscarVenda(int mes, int dia) {
