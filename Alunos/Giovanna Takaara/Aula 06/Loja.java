@@ -10,6 +10,7 @@ public class Loja {
         ArrayList<Vendedor> vendedores;
         ArrayList<Cliente> clientes;
 
+
         public Loja(String nomeFantasia, String razaoSocial, String cnpj, String cidade, String bairro, String rua) {
             this.nomeFantasia = nomeFantasia;
             this.razaoSocial = razaoSocial;

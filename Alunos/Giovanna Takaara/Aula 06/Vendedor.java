@@ -10,6 +10,7 @@ public class Vendedor {
     double salarioBase;
     ArrayList<Double> salarioRecebido = new ArrayList<>();
 
+
    public Vendedor (String nome, int idade, String loja, String cidade, String bairro, String rua,
     double salarioBase) {
 
@@ -25,7 +26,6 @@ public class Vendedor {
         salarioRecebido.add (2100.00);
         salarioRecebido.add (2200.00);
    }
-
    public void apresentarVendedor() {
        System.out.println("Vendedor: " + nome + "\nIdade: " + idade + "\nLoja: " + loja);
    }
@@ -37,7 +37,6 @@ public class Vendedor {
         }
         return soma / salarioRecebido.size();
    }
-
    public double calcularBonus(){
        return salarioBase * 0.2;
    }
