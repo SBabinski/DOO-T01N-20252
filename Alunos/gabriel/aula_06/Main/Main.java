@@ -4,6 +4,27 @@ import java.util.ArrayList;
 import aula_06.Vendedor.Vend;
 import aula_06.Cliente.Client;
 
+
+class Cliente {
+    String nome;
+    int idade;
+    String cidade;
+    String bairro;
+    String rua;
+}
+
+
+
+class Vendedor {
+    String nome;
+    int idade;
+    String loja;
+    String cidade;
+    String bairro;
+    String rua;
+    double salarioBase;
+}
+
 class Venda {
     int quantidade;
     double precoUnitario;
