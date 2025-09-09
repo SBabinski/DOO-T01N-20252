@@ -1,7 +1,5 @@
-package aula_06;
-
-import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 //Segundo ela, seria ótimo poder salvar a quantidade de vendas totais em um 
 //dia de um mês. Ela também gostaria de buscar a quantidade de vendas total pelo mês e dia.
@@ -24,11 +22,10 @@ class Venda {
     }
 }
 
-public class Myplant {
+public class Main {
 
     public static void main(String[] args) {
         ArrayList<Venda> vendas = new ArrayList<>();
-        ArrayList<Vendedor> vendedores = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
@@ -49,12 +46,7 @@ public class Myplant {
             System.out.println("2 - troco");
             System.out.println("3 - Relatório vendas");
             System.out.println("4 - Buscar Venda");
-            System.out.println("5 - Cadastrar Vendedor");
-            System.out.println("6 - cadastrar cliente ");
-            System.out.println("7 - salario vendedores com bonus");
-            System.out.println("8 - media salarial");
-            System.out.println("9 - sair");
-
+            System.out.println("5 - sair");
             System.out.print("Digite a opcao: ");
             opcao = scanner.nextInt();
 
@@ -157,36 +149,18 @@ public class Myplant {
                         System.out.println("Nenhuma venda encontrada para o mês e dia informados.");
                     }
 
+
+
                     break;
 
                 case 5:
-                
-                    scanner.nextLine(); // Limpa o buffer do nextInt()
-
-                    System.out.println("Digite o nome do vendedor:");
-                    String nomeVendedor = scanner.nextLine();
-
-                    System.out.println("Digite a idade do vendedor:");
-                    int idadeVendedor = scanner.nextInt();
-                    scanner.nextLine(); // limpa o buffer
-
-                    System.out.println("Digite a loja do vendedor:");
-                    String lojaVendedor = scanner.nextLine();
-
-                    // cria o vendedor
-                    Vendedor novoVendedor = new Vendedor(nomeVendedor, idadeVendedor, lojaVendedor);
-
-                    // adiciona na lista
-                    vendedores.add(novoVendedor);
-
-                    System.out.println("Vendedor cadastrado com sucesso!");
-                    novoVendedor.apresentarSe();
+                    System.out.println("Encerrando Programa");
                     break;
-
             }
         }
-
+    
         scanner.close();
     }
+
 
 }/*  */
