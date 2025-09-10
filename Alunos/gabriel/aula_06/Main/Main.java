@@ -170,6 +170,7 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Digite o nome do cliente:");
+                    scanner.nextLine(); 
                     String nomeCliente = scanner.nextLine();
                     System.out.println("Digite a idade do cliente:");
                     int idadeCliente = scanner.nextInt();
