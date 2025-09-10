@@ -1,8 +1,6 @@
-package Vendedor;
+
 
 import java.util.ArrayList;
-import Loja.Loja;
-import Pessoa.Pessoa;
 
 public class Vendedor extends Pessoa {
     private Loja loja;

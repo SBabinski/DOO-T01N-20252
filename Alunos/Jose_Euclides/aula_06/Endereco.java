@@ -1,4 +1,4 @@
-package Endereco;
+
 
 public class Endereco {
     private String cidade;

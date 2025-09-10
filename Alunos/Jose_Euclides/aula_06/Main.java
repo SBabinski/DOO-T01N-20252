@@ -1,11 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import Product.Product;
-import Sales.Sale;
-import Loja.Loja;
-import Cliente.Cliente;
-import Vendedor.Vendedor;
-import Endereco.Endereco;
 
 public class Main {
     private static Scanner scan = new Scanner(System.in);
@@ -114,7 +108,6 @@ public class Main {
         loja.setRazaoSocial(getNameFromUser("Digite a razão social da loja: "));
         loja.setCnpj(getNameFromUser("Digite o CNPJ da loja: "));
         
-        // Criar endereço
         Endereco endereco = new Endereco();
         endereco.setCidade(getNameFromUser("Digite a cidade: "));
         endereco.setBairro(getNameFromUser("Digite o bairro: "));
@@ -144,8 +137,7 @@ public class Main {
         vendedor.setIdade(getIntFromUser("Digite a idade do vendedor: "));
         vendedor.setSalarioBase(getDoubleFromUser("Digite o salário base do vendedor: "));
         
-        // Inicializar ArrayList de salários
-        vendedor.setSalariosRecebidos(new ArrayList<>());
+        vendedor.setSalariosRecebidos(new ArrayList<>({ 1000, 1200, 5600}));
         
         listVendedores.add(vendedor);
         System.out.println("Vendedor cadastrado com sucesso!");

@@ -1,10 +1,6 @@
-package Loja;
+
 
 import java.util.ArrayList;
-
-import Endereco.Endereco;
-import Cliente.Cliente;
-import Vendedor.Vendedor;
 
 public class Loja {
     private String nomeFantasia;

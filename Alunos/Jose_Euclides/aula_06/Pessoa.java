@@ -1,6 +1,4 @@
-package Pessoa;
 
-import Endereco.Endereco;
 
 public class Pessoa extends Endereco {
     public String nome;

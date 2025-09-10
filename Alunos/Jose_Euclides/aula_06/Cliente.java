@@ -1,7 +1,3 @@
-package Cliente;
-
-import Pessoa.Pessoa;
-
 public class Cliente extends Pessoa {
     public Cliente() {
         super();

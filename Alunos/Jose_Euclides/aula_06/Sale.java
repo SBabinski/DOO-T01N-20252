@@ -1,7 +1,6 @@
-package Sales;
+
 
 import java.time.LocalDate;
-import Product.Product;
 
 public class Sale {
     private LocalDate createdAt;
