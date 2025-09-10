@@ -182,7 +182,7 @@ public class Main {
                     System.out.println("Digite a rua do cliente:");
                     String ruaCliente = scanner.nextLine();
                     clientes.add(new Client(nomeCliente, idadeCliente, cidadeCliente, bairroCliente, ruaCliente));
-                    break;
+                    break; 
 
                 case 7:
                     System.out.println("Lista de vendedores:");
