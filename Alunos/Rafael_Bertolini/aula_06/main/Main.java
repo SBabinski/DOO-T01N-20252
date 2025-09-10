@@ -3,21 +3,21 @@ package main;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-import apresentarse.ApresentarCalcularMedia;
 import model.RegistroDeVendas;
 import model.Valores;
 import model.ValoresTroco;
+import services.ApresentarCalcularMedia;
+import services.ApresentarClientes;
+import services.ApresentarLoja;
+import services.CadastroDeClientes;
 import services.CadastroVendedores;
 import services.Calculo;
+import services.CalculoBonusVendedores;
+import services.ContaClientes;
+import services.ContaVendedores;
 import services.FazendoRegistroDasVendas;
 import services.FiltroVendas;
 import services.Troco;
-import services.CalculoBonusVendedores;
-import services.CadastroDeClientes;
-import apresentarse.ApresentarClientes;
-import apresentarse.ContaClientes;
-import apresentarse.ContaVendedores;
-import apresentarse.ApresentarLoja;
 
 public class Main {
 
@@ -184,42 +184,43 @@ public class Main {
 
 				chamandoCadastroDeVendedores.cadastrandoVendedores();
 				break;
-				
+
 			case 5:
-				
+
 				cadastroDeClientes.cadastrandoCliente();
-				
+
 				break;
-				
+
 			case 6:
-				
+
 				apresentarClientes.apresentarseClientes(cadastroDeClientes);
-				
+
 				break;
 
 			case 7:
-				
-				chamandoOCalculoDeBonusParaOsVendedores.apresentarseCalculoBonusDeVendedores(chamandoCadastroDeVendedores);
-				
+
+				chamandoOCalculoDeBonusParaOsVendedores
+						.apresentarseCalculoBonusDeVendedores(chamandoCadastroDeVendedores);
+
 				break;
-				
+
 			case 8:
 
 				chamandoCalculoDeMediaDosVendedores.apresentarseMediaVendedor();
 
 				break;
-				
+
 			case 9:
-				
+
 				contaClientes.contaClientes(cadastroDeClientes);
 				contaVendedores.contaVendedores(chamandoCadastroDeVendedores);
-				
+
 				break;
-				
-			case 10: 
-				
+
+			case 10:
+
 				loja.apresentaLoja();
-				
+
 				break;
 
 			case 11:

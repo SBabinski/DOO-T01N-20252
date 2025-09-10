@@ -1,9 +1,8 @@
-package apresentarse;
+package services;
 
 import java.util.List;
 
 import model.Vendedores;
-import services.CadastroVendedores;
 
 public class ContaVendedores {
 

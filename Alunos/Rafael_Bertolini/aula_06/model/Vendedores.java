@@ -112,5 +112,5 @@ public class Vendedores {
 		}
 		return somaParaMedia / salarioRecebido.size();
 	}
-	
+
 }
