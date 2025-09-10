@@ -1,7 +1,5 @@
-package aula_06.Loja;
 
-import aula_06.Vendedor.Vend;
-import aula_06.Cliente.Client;
+
 
 public class Loja {
     // Atributos da classe Loja

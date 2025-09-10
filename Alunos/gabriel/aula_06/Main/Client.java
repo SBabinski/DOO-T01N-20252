@@ -1,8 +1,5 @@
-package aula_06.Cliente;
-
 public class Client {
-    // Atributos da classe Cliente
-    private String nome;
+     private String nome;
     private int idade;
     private String cidade;
     private String bairro;
@@ -64,3 +61,4 @@ public class Client {
         this.rua = rua;
     }
 }
+

@@ -1,58 +1,16 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-import aula_06.Vendedor.Vend;
-import aula_06.Cliente.Client;
-
-
-class Cliente {
-    String nome;
-    int idade;
-    String cidade;
-    String bairro;
-    String rua;
-}
-
-
-
-class Vendedor {
-    String nome;
-    int idade;
-    String loja;
-    String cidade;
-    String bairro;
-    String rua;
-    double salarioBase;
-}
-
-class Venda {
-    int quantidade;
-    double precoUnitario;
-    double valorFinal;
-    int dia;
-    int mes;
-    int ano;
-
-    public Venda(int quantidade, double precoUnitario, double valorFinal, int dia, int mes, int ano) {
-        this.quantidade = quantidade;
-        this.precoUnitario = precoUnitario;
-        this.valorFinal = valorFinal;
-        this.dia = dia;
-        this.mes = mes;
-        this.ano = ano;
-    }
-}
-
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<Venda> vendas = new ArrayList<>();
+        ArrayList<Vendas> vendas = new ArrayList<>();
         ArrayList<Vend> vendedores = new ArrayList<>();
         ArrayList<Client> clientes = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
-        double precototal = 0.0; // Inicializa precototal antes do loop
+        double precototal = 0.0;
         double totaltroco = 0.0;
         double totaldsc = 0.0;
         double devendo = 0.0;
@@ -62,7 +20,7 @@ public class Main {
         int mes = 0;
         int ano = 0;
 
-        while (opcao != 5) {
+        while (opcao != 9) {
 
             System.out.println("---- menu da caclculadora da veia ----");
             System.out.println("1 - Venda");
@@ -124,7 +82,7 @@ public class Main {
                         valorFinal = precototal;
                     }
 
-                    vendas.add(new Venda(quantidade, precounitario, valorFinal, dia, mes, ano));
+                    vendas.add(new Vendas(quantidade, precounitario, valorFinal, dia, mes, ano));
 
                     break;
 
@@ -151,7 +109,7 @@ public class Main {
                 case 3:
                     System.out.println("Lista de vendas:");
                     double valuetotal = 0;
-                    for (Venda v : vendas) {
+                    for (Vendas v : vendas) {
                         System.out.printf("Qtd: %d, Preço Unitário: %.2f, Dia: %d, Mês: %d, Ano: %d, Total: %.2f%n",
                                 v.quantidade, v.precoUnitario, v.dia, v.mes, v.ano, v.valorFinal);
                         valuetotal += v.valorFinal;
@@ -165,7 +123,7 @@ public class Main {
                     mes = scanner.nextInt();
                     dia = scanner.nextInt();
                     boolean found = false;
-                    for (Venda v : vendas) {
+                    for (Vendas v : vendas) {
                         if (v.mes == mes && v.dia == dia) {
                             System.out.printf("Qtd: %d, Preço Unitário: %.2f, Dia: %d, Mês: %d, Ano: %d, Total: %.2f%n",
                                     v.quantidade, v.precoUnitario, v.dia, v.mes, v.ano, v.valorFinal);
@@ -180,22 +138,36 @@ public class Main {
 
                 case 5:
                     System.out.println("Digite o nome do vendedor:");
-                    String nome = scanner.nextLine();
-                    System.out.println("Digite a idade do vendedor:");
-                    int idade = scanner.nextInt();
-                    System.out.println("Digite a loja do vendedor:");
-                    String loja = scanner.nextLine();
-                    System.out.println("Digite a cidade do vendedor:");
-                    String cidade = scanner.nextLine();
-                    System.out.println("Digite o bairro do vendedor:");
-                    String bairro = scanner.nextLine();
-                    System.out.println("Digite a rua do vendedor:");
-                    String rua = scanner.nextLine();
-                    System.out.println("Digite o salario base do vendedor:");
-                    double salarioBase = scanner.nextDouble();
-                    vendedores.add(new Vend(nome, idade, loja, cidade, bairro, rua, salarioBase));
-                    break;
+                     scanner.nextLine(); 
+                    String nome = scanner.nextLine(); // lê nome
+                    System.out.println();
 
+                    System.out.println("Digite a idade do vendedor:");
+                    int idade = scanner.nextInt(); // lê idade
+                    scanner.nextLine(); // limpa ENTER que ficou no buffer
+
+                    System.out.println("Digite a loja do vendedor:");
+                    String loja = scanner.nextLine(); // lê loja
+
+                    System.out.println("Digite a cidade do vendedor:");
+                    String cidade = scanner.nextLine(); // lê cidade
+
+                    System.out.println("Digite o bairro do vendedor:");
+                    String bairro = scanner.nextLine(); // lê bairro
+
+                    System.out.println("Digite a rua do vendedor:");
+                    String rua = scanner.nextLine(); // lê rua
+
+                    System.out.println("Digite o salario base do vendedor:");
+                    double salarioBase = scanner.nextDouble(); // lê salário
+                    scanner.nextLine(); // limpa ENTER
+
+                    // cria o objeto e adiciona na lista
+                    vendedores.add(new Vend(nome, idade, loja, cidade, bairro, rua, salarioBase));
+
+                    System.out.println("✅ Vendedor cadastrado com sucesso!");
+                     
+                    break;
                 case 6:
                     System.out.println("Digite o nome do cliente:");
                     String nomeCliente = scanner.nextLine();

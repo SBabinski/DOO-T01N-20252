@@ -1,4 +1,4 @@
-package aula_06.Vendedor;
+
 
 public class Vend {
     // Atributos da classe Vendedor
