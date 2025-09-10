@@ -112,6 +112,8 @@ public class Main {
                     System.out.println("Digite o dia: ");
                     int diaConsulta = scanner.nextInt();
 
+
+
                     int totalfinal = 0;
                     for (int i = 0; i < mesLista.size(); i++) {
                         if (mesLista.get(i) == mesConsulta && diaLista.get(i) == diaConsulta) {

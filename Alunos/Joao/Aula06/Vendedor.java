@@ -28,6 +28,7 @@ public class Vendedor {
         System.out.println("Vendedor: " + nome + ", Idade: " + idade + ", Loja: " + loja);
     }
 
+
     public double calcmedia() {
         double soma = 0;
         for (int i = 0; i < salrecebido.size(); i++) {
@@ -39,4 +40,5 @@ public class Vendedor {
   public double calcbonus(){
     return salbase * 0.2;
   }
+  
 }
