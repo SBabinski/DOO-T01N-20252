@@ -6,7 +6,9 @@ public class Loja {
     private String nomeFantasia;
     private String razaoSocial;
     private String cnpj;
-    private Endereco endereco;
+    private String cidade; 
+    private String bairro; 
+    private String rua; 
     private Vendedor[] vendedores;
     private Cliente[] clientes;
 
@@ -38,12 +40,28 @@ public class Loja {
         this.cnpj = cnpj;
     }
 
-    public Endereco getEndereco() {
-        return endereco;
+    public String getCidade() {
+        return cidade;
     }
 
-    public void setEndereco(Endereco endereco) {
-        this.endereco = endereco;
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 
     public Vendedor[] getVendedores() {
@@ -73,7 +91,9 @@ public class Loja {
     public void apresentarSe() {
         System.out.println("Razão Social: " + this.nomeFantasia);
         System.out.println("CNPJ: " + this.cnpj);
-        System.out.println("Endereço: " + (this.endereco != null ? this.endereco.toString() : "Endereço não informado"));
+        System.out.println("Rua: " + this.rua);
+        System.out.println("Bairro: " + this.bairro);
+        System.out.println("Cidade: " + this.cidade);
     }
 
 }

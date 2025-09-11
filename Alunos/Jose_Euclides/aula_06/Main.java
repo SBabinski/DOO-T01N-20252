@@ -53,7 +53,6 @@ public class Main {
     }
 
     public static void reportSalesByDayAndMonth() {
-        // pega o dia e mes
         System.out.println("Digite o mes que deseja filtrar:\n");
         int month = scan.nextInt();
 
@@ -108,11 +107,9 @@ public class Main {
         loja.setRazaoSocial(getNameFromUser("Digite a razão social da loja: "));
         loja.setCnpj(getNameFromUser("Digite o CNPJ da loja: "));
         
-        Endereco endereco = new Endereco();
-        endereco.setCidade(getNameFromUser("Digite a cidade: "));
-        endereco.setBairro(getNameFromUser("Digite o bairro: "));
-        endereco.setRua(getNameFromUser("Digite a rua: "));
-        loja.setEndereco(endereco);
+        loja.setCidade(getNameFromUser("Digite a cidade: "));
+        loja.setBairro(getNameFromUser("Digite o bairro: "));
+        loja.setRua(getNameFromUser("Digite a rua: "));
         
         listLojas.add(loja);
         System.out.println("Loja criada com sucesso!");
@@ -137,7 +134,7 @@ public class Main {
         vendedor.setIdade(getIntFromUser("Digite a idade do vendedor: "));
         vendedor.setSalarioBase(getDoubleFromUser("Digite o salário base do vendedor: "));
         
-        vendedor.setSalariosRecebidos(new ArrayList<>({ 1000, 1200, 5600}));
+        vendedor.setSalariosRecebidos(new ArrayList<>());
         
         listVendedores.add(vendedor);
         System.out.println("Vendedor cadastrado com sucesso!");
@@ -225,8 +222,6 @@ public class Main {
             try {
                 int clienteIndex = Integer.parseInt(indice.trim()) - 1;
                 if (clienteIndex >= 0 && clienteIndex < listClientes.size()) {
-                    // Aqui você pode implementar a lógica para adicionar cliente à loja
-                    // Por enquanto, apenas confirmamos a seleção
                     System.out.println("Cliente " + listClientes.get(clienteIndex).getNome() + " selecionado para adicionar à loja.");
                     clientesAdicionados++;
                 }
@@ -283,8 +278,6 @@ public class Main {
             try {
                 int vendedorIndex = Integer.parseInt(indice.trim()) - 1;
                 if (vendedorIndex >= 0 && vendedorIndex < listVendedores.size()) {
-                    // Aqui você pode implementar a lógica para adicionar vendedor à loja
-                    // Por enquanto, apenas confirmamos a seleção
                     System.out.println("Vendedor " + listVendedores.get(vendedorIndex).getNome() + " selecionado para adicionar à loja.");
                     vendedoresAdicionados++;
                 }

@@ -1,8 +1,10 @@
 
-
-public class Pessoa extends Endereco {
+public class Pessoa  {
     public String nome;
     public int idade;
+    public String cidade; 
+    public String bairro; 
+    public String rua; 
 
     public Pessoa() {
         this.nome = "";
@@ -31,5 +33,29 @@ public class Pessoa extends Endereco {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
     }
 }
