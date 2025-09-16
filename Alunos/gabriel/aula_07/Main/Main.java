@@ -7,6 +7,7 @@ public class Main {
         ArrayList<Vendas> vendas = new ArrayList<>();
         ArrayList<Vend> vendedores = new ArrayList<>();
         ArrayList<Client> clientes = new ArrayList<>();
+,
 
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
