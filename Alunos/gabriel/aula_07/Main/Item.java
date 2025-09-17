@@ -1,13 +1,11 @@
 public class Item {
     
-    private double id;
+    private int id;
     private String nome;
     private String tipo;
     private double valor;
 
-    
-
-    public Item(double id, String nome, String tipo, double valor) {
+    public Item(int id, String nome, String tipo, double valor) {
         this.id = id;
         this.nome = nome;
         this.tipo = tipo;
@@ -16,11 +14,11 @@ public class Item {
 
     
 
-    public double getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(double id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -57,8 +55,7 @@ public class Item {
 
 
     public double calcularSubtotal() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'calcularSubtotal'");
+        return this.valor;
     }
 
 
