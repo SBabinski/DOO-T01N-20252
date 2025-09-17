@@ -1,8 +1,11 @@
 public class Pessoa {
-    
     protected String nome;    // protected: visível em subclasse no mesmo pacote ou subclasses
     protected int idade;
     protected Endereço endereco;
+
+    public Pessoa() {
+        super();
+    }
 
     public Pessoa(String nome, int idade, Endereço endereco) {
         this.nome = nome;

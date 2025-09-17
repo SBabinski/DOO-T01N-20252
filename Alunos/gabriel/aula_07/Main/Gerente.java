@@ -1,30 +1,25 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gerente  extends Pessoa {
-    private String nome;
-    private int idade;
+public class Gerente extends Pessoa {
     private String loja;
     private double salarioBase;
     private List<Double> salarioRecebido;
-    private Endereço endereco; // composição
 
-    public Gerente(String nome, int idade, String loja, double salarioBase, Endereço endereco) {
-      
-        super(nome, idade, endereco);
+    public Gerente(String nome, int idade, String loja, String cidade, String bairro, String rua, double salarioBase, double[] salariosRecebidos) {
+        super(nome, idade, new Endereço("", cidade, bairro, rua, 0, ""));
         this.loja = loja;
         this.salarioBase = salarioBase;
-
         this.salarioRecebido = new ArrayList<>();
-        this.salarioRecebido.add(salarioBase);
-        this.salarioRecebido.add(salarioBase + 500);
-        this.salarioRecebido.add(salarioBase + 1000);
+        for (double salario : salariosRecebidos) {
+            this.salarioRecebido.add(salario);
+        }
     }
 
     public void apresentarse() {
-        System.out.println("Nome: " + nome + ", Idade: " + idade + ", Loja: " + loja);
+        System.out.println("Nome: " + super.nome + ", Idade: " + super.idade + ", Loja: " + loja);
         System.out.print("Endereço: ");
-        endereco.apresentarLogradouro(); // agora delega para Endereco
+        super.endereco.apresentarLogradouro();
     }
 
     public double calcularMedia() {
@@ -40,8 +35,8 @@ public class Gerente  extends Pessoa {
     }
 
     public static void main(String[] args) {
-        Endereço end1 = new Endereço("PR", "Curitiba", "Centro", "Rua XV", 123, "Sala 4");
-        Gerente gerente1 = new Gerente("Carlos Silva", 40, "Loja Centro", 5000, end1);
+        double[] salarios = {5000.0, 5500.0, 6000.0};
+        Gerente gerente1 = new Gerente("Carlos Silva", 40, "Loja Centro", "Curitiba", "Centro", "Rua XV", 5000, salarios);
 
         gerente1.apresentarse();
         System.out.println("Média dos salários: " + gerente1.calcularMedia());

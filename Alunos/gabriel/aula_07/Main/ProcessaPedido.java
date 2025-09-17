@@ -8,14 +8,10 @@ public class ProcessaPedido {
     public Pedido processar(int id, String cliente, String vendedor, String loja,
                             List<Item> itens, LocalDate dataVencimentoReserva) {
 
-        Pedido pedido = new Pedido(
-                id,
-                LocalDate.now(),            // data de criação = hoje
-                dataVencimentoReserva,
-                cliente,
-                vendedor,
-                loja
-        );
+        LocalDate localDate;
+        Pedido pedido = new Pedido(id,cliente,vendedor,loja,LocalDate.now(), dataVencimentoReserva);
+                
+    
 
         // adiciona itens recebidos
         for (Item item : itens) {
