@@ -83,12 +83,11 @@ public class Main {
 
                 resultado.setText(String.valueOf(res));
 
-            }catch (EntradaInvalida ei){
-                    JOptionPane.showMessageDialog(frame,
-                            ei.getMessage(),
-                            "Não coloque letras nos campos de números", JOptionPane.ERROR_MESSAGE);
-                }
-            catch(Exception ex) {
+            } catch (EntradaInvalida ei) {
+                JOptionPane.showMessageDialog(frame,
+                        ei.getMessage(),
+                        "Não coloque letras nos campos de números", JOptionPane.ERROR_MESSAGE);
+            } catch (Exception ex) {
                 JOptionPane.showMessageDialog(frame,
                         "Ocorreu um erro: " + ex.getMessage(),
                         "Erro geral",
@@ -106,7 +105,7 @@ public class Main {
     private static Double lerNumero(String campo) throws EntradaInvalida {
         try {
             return Double.parseDouble(campo.trim());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             throw new EntradaInvalida("Não é permitido entrar com letras," +
                     " utilizar virgula (utilize pontos se for o caso)," +
                     " ou utilizar campos vazios");
@@ -122,7 +121,7 @@ public class Main {
 
     }
 
-    private static void EstilizarBotao(JButton b){
+    private static void EstilizarBotao(JButton b) {
         b.setFont(new Font("Arial", Font.BOLD, 20));
         b.setBackground(Color.LIGHT_GRAY);
         b.setForeground(Color.black);
@@ -132,7 +131,7 @@ public class Main {
 }
 
 class EntradaInvalida extends Exception {
-    public EntradaInvalida (String msg){
+    public EntradaInvalida(String msg) {
         super(msg);
     }
 }
