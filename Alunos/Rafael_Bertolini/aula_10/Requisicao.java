@@ -16,7 +16,7 @@ public class Requisicao {
     private static final String apiLink = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
     private static final String apiKey = "4JA2C8NEYR9LLYSF3Y4HUTLV4";
 
-    public MoldeClima.Dia getRequisicao(String cidade) throws IOException, InterruptedException{
+    public MoldeClima.Dia getRequisicao(String cidade) throws IOException, InterruptedException {
         String cidadeInformada = URLEncoder.encode(cidade, StandardCharsets.UTF_8);
 
         String url = apiLink + cidadeInformada

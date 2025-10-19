@@ -24,11 +24,11 @@ public class Main {
                 break;
             }
 
-    try{
-        MoldeClima.Dia clima = requisicao.getRequisicao(cidade);
-        System.out.println(clima);
-    }catch(IOException | InterruptedException e){
-        System.out.println("Erro ao buscar o clima da cidade.");
+            try {
+                MoldeClima.Dia clima = requisicao.getRequisicao(cidade);
+                System.out.println(clima);
+            } catch (IOException | InterruptedException e) {
+                System.out.println("Erro ao buscar o clima da cidade.");
             }
         }
         scan.close();

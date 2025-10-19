@@ -7,7 +7,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MoldeClima {
 
-        public List<Dia> days;
+    public List<Dia> days;
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Dia {
