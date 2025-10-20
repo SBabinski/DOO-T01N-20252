@@ -11,8 +11,8 @@ public class Main {
         System.out.println("Bem vindo ao sistema de clima");
         while (true) {
 
-            System.out.println("Digite o nome da cidade: (ou 'sair' para sair)");
-            String cidade = scan.nextLine().trim();
+            System.out.println("Digite o nome da cidade: (ou 'sair' para sair do programa)");
+            String cidade = scan.nextLine().trim();  
 
             if (cidade.equalsIgnoreCase("sair")) {
                 System.out.println("Saindo do sistema...");

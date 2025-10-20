@@ -23,7 +23,7 @@ public class RepoInfo {
         ObjectMapper mapper = new ObjectMapper();
         
         // Converte a string JSON em uma árvore de nós para navegar pelos dados
-        JsonNode root = mapper.readTree(jsonResponse);
+        JsonNode root = mapper.readTree(jsonResponse);    
         
         // Extrai as condições atuais (temperatura, umidade, vento atuais)
         JsonNode current = root.get("currentConditions");

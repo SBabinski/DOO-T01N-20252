@@ -26,7 +26,7 @@ public class Api {
         URI url = URI.create(link);
 
         HttpRequest request = HttpRequest.newBuilder()
-            .uri(url)
+            .uri(url)    
             .GET()
             .build();
 
