@@ -36,16 +36,16 @@ public class RepoInfo {
         RepoInfo info = new RepoInfo();
         
         // DADOS ATUAIS (do currentConditions):
-        info.temp = current.path("temp").asDouble();           // Temperatura atual
-        info.humidity = current.path("humidity").asDouble();   // Umidade atual
-        info.conditions = current.path("conditions").asText(); // Condições
-        info.windspeed = current.path("windspeed").asDouble(); // Velocidade do vento atual
-        info.winddir = current.path("winddir").asDouble();     // Direção do vento atual
+        info.temp = current.get("temp").asDouble();           // Temperatura atual
+        info.humidity = current.get("humidity").asDouble();   // Umidade atual
+        info.conditions = current.get("conditions").asText(); // Condições
+        info.windspeed = current.get("windspeed").asDouble(); // Velocidade do vento atual
+        info.winddir = current.get("winddir").asDouble();     // Direção do vento atual
         
         // DADOS DO DIA (do primeiro item do array days):
-        info.tempmax = today.path("tempmax").asDouble();       // Temperatura máxima do dia
-        info.tempmin = today.path("tempmin").asDouble();       // Temperatura mínima do dia
-        info.precip = today.path("precip").asDouble();         // Precipitação do dia
+        info.tempmax = today.get("tempmax").asDouble();       // Temperatura máxima do dia
+        info.tempmin = today.get("tempmin").asDouble();       // Temperatura mínima do dia
+        info.precip = today.get("precip").asDouble();         // Precipitação do dia
         
         // Retorna o objeto preenchido com todos os dados do clima
         return info;
