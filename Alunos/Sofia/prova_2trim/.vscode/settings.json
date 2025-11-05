@@ -1,0 +1,9 @@
+{
+  "java.project.referencedLibraries": [
+    "libs/**/*.jar"
+  ],
+  "java.project.sourcePaths": [
+    "."
+  ],
+  "java.format.enabled": true
+}
