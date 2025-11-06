@@ -1,0 +1,85 @@
+{
+  "desejos": [],
+  "nome": "Sofia",
+  "favoritos": [
+    {
+      "summary": "<p>Six young (20-something) people from New York City (Manhattan), on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.<\/p><p>This average group of buddies goes through massive mayhem, family trouble, past and future romances, fights, laughs, tears and surprises as they learn what it really means to be a friend.<\/p>",
+      "genres": [
+        "Comedy",
+        "Romance"
+      ],
+      "name": "Friends",
+      "premiered": "1994-09-22",
+      "rating": 8.5,
+      "ended": "2004-05-06",
+      "networkName": "NBC",
+      "language": "English",
+      "id": 431,
+      "status": "Ended"
+    },
+    {
+      "summary": "<p>The doctors of Grey Sloan Memorial Hospital deal with life-or-death consequences on a daily basis -- it's in one another that they find comfort, friendship and, at times, more than friendship. Together they're discovering that neither medicine nor relationships can be defined in black and white. Real life only comes in shades of grey.<\/p>",
+      "genres": [
+        "Drama",
+        "Romance",
+        "Medical"
+      ],
+      "name": "Grey's Anatomy",
+      "premiered": "2005-03-27",
+      "rating": 7.7,
+      "ended": "",
+      "networkName": "ABC",
+      "language": "English",
+      "id": 67,
+      "status": "Running"
+    },
+    {
+      "summary": "<p><b>How I Met Your Mother<\/b> is a comedy about Ted and how he fell in love. It all starts when Ted's best friend, Marshall drops the bombshell that he's going to propose to his long-time girlfriend, Lilya kindergarten teacher. At that moment, Ted realizes that he had better get a move on if he too hopes to find true love. Helping him in his quest is Barney a friend with endless, sometimes outrageous opinions, a penchant for suits and a foolproof way to meet women. When Ted meets Robin he's sure it's love at first sight, but destiny may have something else in store.<\/p>",
+      "genres": [
+        "Drama",
+        "Comedy",
+        "Romance"
+      ],
+      "name": "How I Met Your Mother",
+      "premiered": "2005-09-19",
+      "rating": 7.9,
+      "ended": "2014-03-31",
+      "networkName": "CBS",
+      "language": "English",
+      "id": 171,
+      "status": "Ended"
+    },
+    {
+      "summary": "<p>When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.<\/p>",
+      "genres": [
+        "Drama",
+        "Horror",
+        "Science-Fiction"
+      ],
+      "name": "Stranger Things",
+      "premiered": "2016-07-15",
+      "rating": 8.5,
+      "ended": "",
+      "networkName": "Netflix",
+      "language": "English",
+      "id": 2993,
+      "status": "Running"
+    }
+  ],
+  "assistidas": [{
+    "summary": "<p><b>Breaking Bad<\/b> follows protagonist Walter White, a chemistry teacher who lives in New Mexico with his wife and teenage son who has cerebral palsy. White is diagnosed with Stage III cancer and given a prognosis of two years left to live. With a new sense of fearlessness based on his medical prognosis, and a desire to secure his family's financial security, White chooses to enter a dangerous world of drugs and crime and ascends to power in this world. The series explores how a fatal diagnosis such as White's releases a typical man from the daily concerns and constraints of normal society and follows his transformation from mild family man to a kingpin of the drug trade.<\/p>",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "name": "Breaking Bad",
+    "premiered": "2008-01-20",
+    "rating": 9.2,
+    "ended": "2019-10-11",
+    "networkName": "AMC",
+    "language": "English",
+    "id": 169,
+    "status": "Ended"
+  }]
+}
