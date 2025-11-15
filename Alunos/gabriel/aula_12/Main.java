@@ -7,7 +7,7 @@ public class Main {
 
          System.out.println("--------------------------------");
         System.out.println("atividade 01 ");
-        
+         
         // atividade 01
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
 
