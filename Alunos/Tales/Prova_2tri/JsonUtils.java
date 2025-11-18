@@ -3,14 +3,7 @@ import java.util.*;
 import java.util.regex.*;
 import java.util.stream.Collectors;
 
-/**
- * Utilitário JSON SUPER ENXUTO, suficiente para:
- * - Ler campos string/int/double simples;
- * - Ler arrays de strings;
- * - Ler nested ("rating":{"average":...}, "network":{"name":...});
- * - Ler arrays de inteiros para persistência.
- * NÃO é um parser JSON completo; serve ao escopo deste trabalho.
- */
+
 public class JsonUtils {
 
     public static String quote(String s) {

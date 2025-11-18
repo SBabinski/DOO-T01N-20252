@@ -13,7 +13,7 @@ public class TvMazeClient {
     public List<ShowInfo> searchShows(String query) {
         try {
             String url = BASE + "/search/shows?q=" + URI.create("http://x/?" + "q=" + query).getQuery().substring(2);
-            // truque simples para escapear query com segurança
+            // truque simples para escapear query com segurança - IA
             HttpRequest req = HttpRequest.newBuilder(URI.create(url))
                     .timeout(Duration.ofSeconds(15))
                     .header("User-Agent", "Prova2Tri/1.0")
@@ -22,7 +22,7 @@ public class TvMazeClient {
             if (resp.statusCode() != 200) return List.of();
 
             String json = resp.body();
-            // A resposta é um array de objetos com campo "show": {...}
+            
             List<String> showObjects = JsonUtils.extractObjects(json, "\"show\":\\s*\\{", '}');
             List<ShowInfo> list = new ArrayList<>();
             for (String showJson : showObjects) {
@@ -61,7 +61,7 @@ public class TvMazeClient {
     }
 
     private HttpResponse<String> sendWithRetry(HttpRequest req) throws Exception {
-        // Respeita rate limit (TVmaze: pelo menos 20 req/10s por IP). Se 429, espera e tenta de novo.
+        
         for (int i = 0; i < 3; i++) {
             HttpResponse<String> resp = http.send(req, HttpResponse.BodyHandlers.ofString());
             if (resp.statusCode() != 429) return resp;
@@ -70,8 +70,7 @@ public class TvMazeClient {
         return http.send(req, HttpResponse.BodyHandlers.ofString());
     }
 
-    // --------- Parse JSON (campos usados) ----------
-    private ShowInfo parseShow(String showJson) {
+        private ShowInfo parseShow(String showJson) {
         try {
             Integer id = JsonUtils.getInt(showJson, "\"id\"");
             String name = JsonUtils.getString(showJson, "\"name\"");
