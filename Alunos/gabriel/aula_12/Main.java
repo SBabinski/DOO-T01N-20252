@@ -21,7 +21,7 @@ public class Main {
         // atividade 02
 
         List<String> nomes = Arrays.asList("roberto", "jose", "caio", "vinicius");
-
+       
         List<String> nomesMaiusculos = nomes.stream()
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
