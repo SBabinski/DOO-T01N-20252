@@ -1,0 +1,38 @@
+{
+  "username": "pablo",
+  "favorites": [
+    {
+      "id": 48945,
+      "name": "Cyberpunk: Edgerunners",
+      "language": "Japanese",
+      "genres": [
+        "Action",
+        "Anime",
+        "Science-Fiction"
+      ],
+      "rating": 7.6,
+      "status": "Ended",
+      "premiered": "2022-09-13",
+      "ended": "2022-09-13",
+      "network": "Netflix"
+    }
+  ],
+  "watched": [],
+  "toWatch": [
+    {
+      "id": 48945,
+      "name": "Cyberpunk: Edgerunners",
+      "language": "Japanese",
+      "genres": [
+        "Action",
+        "Anime",
+        "Science-Fiction"
+      ],
+      "rating": 7.6,
+      "status": "Ended",
+      "premiered": "2022-09-13",
+      "ended": "2022-09-13",
+      "network": "Netflix"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+com\tvtracker\Main.class
+com\tvtracker\model\Series.class
+com\tvtracker\model\UserData.class
+com\tvtracker\TVMazeClient.class
+com\tvtracker\Persistence.class
