@@ -1,3 +1,8 @@
 {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\berna\\Downloads\\json-20250517.jar",
+        "c:\\Users\\berna\\Downloads\\gson-2.13.2.jar"
+    ]
 }
